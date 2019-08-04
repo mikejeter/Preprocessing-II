@@ -1,9 +1,14 @@
 .home {
 
   .main-header {
+    display: flex;
     width: 100%;
     border-top: 2px dashed silver;
     border-bottom: 2px dashed silver;
+
+    @media @mobile {
+      width: 100%;
+    }
 
     h2 {
       margin-top: 20px;
@@ -21,11 +26,21 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @mobile {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+    }
+
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .img-content {
@@ -34,6 +49,10 @@
 
       img {
         border-radius: 10px;
+      }
+
+      @media @mobile {
+        width: 100%;
       }
     }
   }
@@ -60,6 +79,10 @@
     img {
       border-radius: 10px;
     }
+
+    @media @mobile {
+      width: 100%;
+    }
   }
 
   .content-pick {
@@ -71,6 +94,16 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width: 70%;
+      }
+    }
+
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
 }// home

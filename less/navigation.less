@@ -1,22 +1,30 @@
 // Navigation Styles here
-
-.displayFlex(@justify, @align) {
-	display: flex;
-	justify-content: @justify;
-}
-
 nav {
-    .displayFlex(space-between, baseline);
-        margin-top: 5%;
-        margin-bottom: 5%
-}
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-bottom: 5%;
 
-a {
-    font-size: 14px;
-    text-decoration: none;
-    color: black;
+    a {
+        display: flex;
+        font-size: 14px;
+        text-decoration: none;
+        color: black;
+     }
+
+    @media @mobile {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 .header-text {
     margin-right: 20%;
+
+    @media @mobile {
+        display: flex;
+        margin-left: 40%;
+    }
 }
+
+ 
